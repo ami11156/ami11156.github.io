@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>東村伊佐三 鈴鹿８耐参戦歴</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0b1d3a;
+    --navy-mid: #132647;
+    --navy-light: #1e3a6e;
+    --navy-bright: #2558a8;
+    --blue-accent: #3a72c8;
+    --red: #c0392b;
+    --red-light: #e74c3c;
+    --gold: #c9a84c;
+    --white: #ffffff;
+    --off-white: #f4f6fa;
+    --muted: #a8b8d4;
+    --border: rgba(255,255,255,0.08);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--navy);
+    color: var(--white);
+    min-height: 100vh;
+  }
+
+  /* ====== HERO ====== */
+  .hero {
+    background: linear-gradient(135deg, #060f20 0%, #0b1d3a 40%, #132c54 100%);
+    padding: 60px 40px 40px;
+    text-align: center;
+    border-bottom: 3px solid var(--red);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: 50%;
+    transform: translateX(-50%);
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(37,88,168,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 4px 16px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .hero-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(38px, 7vw, 80px);
+    letter-spacing: 4px;
+    line-height: 1;
+    color: var(--white);
+    text-shadow: 0 0 60px rgba(58,114,200,0.4);
+    margin-bottom: 6px;
+  }
+  .hero-sub {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(20px, 4vw, 40px);
+    letter-spacing: 8px;
+    color: var(--blue-accent);
+    margin-bottom: 30px;
+  }
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .stat-box {
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 42px;
+    color: var(--white);
+    line-height: 1;
+  }
+  .stat-num span {
+    font-size: 22px;
+    color: var(--blue-accent);
+  }
+  .stat-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .stat-divider {
+    width: 1px;
+    background: var(--border);
+    height: 50px;
+    align-self: center;
+  }
+
+  /* ====== MAIN ====== */
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+  }
+
+  /* ====== TABLE ====== */
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(37,88,168,0.3);
+    box-shadow: 0 4px 40px rgba(0,0,0,0.5);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+    font-size: 13.5px;
+  }
+  thead {
+    background: #0a1628;
+  }
+  thead tr:first-child th {
+    background: var(--navy-light);
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 12px 14px 8px;
+    border-bottom: 1px solid rgba(37,88,168,0.4);
+  }
+  thead tr:last-child th {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--blue-accent);
+    padding: 10px 14px;
+    border-bottom: 2px solid var(--blue-accent);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+  tbody tr:hover {
+    background: rgba(37,88,168,0.12);
+  }
+  tbody tr:last-child {
+    border-bottom: none;
+  }
+  td {
+    padding: 12px 14px;
+    color: var(--off-white);
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  /* alternating zebra */
+  tbody tr:nth-child(even) {
+    background: rgba(255,255,255,0.02);
+  }
+  tbody tr:nth-child(even):hover {
+    background: rgba(37,88,168,0.12);
+  }
+
+  /* col styles */
+  .col-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    color: var(--muted);
+    text-align: center;
+    width: 42px;
+  }
+  .col-year {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: var(--white);
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .col-no {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    color: var(--gold);
+    text-align: center;
+  }
+  .col-team {
+    font-size: 12.5px;
+    color: var(--off-white);
+    max-width: 240px;
+    white-space: normal;
+    line-height: 1.4;
+  }
+  .col-partner {
+    font-size: 12px;
+    color: var(--muted);
+    white-space: normal;
+    max-width: 120px;
+    line-height: 1.4;
+  }
+  .col-machine {
+    font-size: 12px;
+    color: #8aabd4;
+    white-space: nowrap;
+  }
+  .col-cls {
+    text-align: center;
+  }
+  .cls-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    border: 1px solid;
+  }
+  .cls-ewc { color: #7fc8e8; border-color: rgba(127,200,232,0.4); background: rgba(127,200,232,0.08); }
+  .cls-sb  { color: #a8d88a; border-color: rgba(168,216,138,0.4); background: rgba(168,216,138,0.08); }
+  .cls-jsb { color: #f0c060; border-color: rgba(240,192,96,0.4); background: rgba(240,192,96,0.08); }
+  .cls-ttf { color: #c8a8f0; border-color: rgba(200,168,240,0.4); background: rgba(200,168,240,0.08); }
+  .cls-sst { color: #f0a860; border-color: rgba(240,168,96,0.4); background: rgba(240,168,96,0.08); }
+  .cls-xf  { color: #88d8c0; border-color: rgba(136,216,192,0.4); background: rgba(136,216,192,0.08); }
+  .cls-other { color: var(--muted); border-color: rgba(168,184,212,0.3); background: transparent; }
+
+  .col-grid {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    color: var(--muted);
+  }
+  .col-rider {
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+  }
+  .col-result {
+    text-align: center;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .result-dnf {
+    color: #4a5568;
+    font-size: 13px;
+  }
+  .result-pos {
+    color: var(--white);
+    font-size: 13px;
+  }
+  .result-top {
+    color: var(--gold);
+    font-size: 13px;
+  }
+  .result-insufficient {
+    color: #4a5568;
+    font-size: 12px;
+  }
+  .result-future {
+    color: #4a5568;
+    font-size: 12px;
+    font-style: italic;
+  }
+  .col-laps {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 17px;
+    color: var(--muted);
+    text-align: right;
+  }
+
+  /* special rows */
+  tr.row-hiatus td {
+    text-align: center;
+    color: var(--red);
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 10px 14px;
+    background: rgba(192,57,43,0.06);
+    border-bottom: none;
+  }
+  tr.row-hiatus td.full-span {
+    font-weight: 700;
+  }
+  tr.row-future td {
+    background: rgba(37,88,168,0.06);
+  }
+  tr.row-future .col-year {
+    color: var(--blue-accent);
+  }
+
+  /* start icon */
+  .start-icon {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #4caf50;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+
+  /* ====== FOOTER ====== */
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 600px) {
+    .hero { padding: 40px 20px 30px; }
+    .hero-stats { gap: 20px; }
+    .stat-divider { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">Race History</div>
+  <div class="hero-title">東村 伊佐三</div>
+  <div class="hero-sub">鈴鹿 ８耐 参戦歴</div>
+  <div class="hero-stats">
+    <div class="stat-box">
+      <div class="stat-num">31<span>回</span></div>
+      <div class="stat-label">総出場回数</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-box">
+      <div class="stat-num">1991<span>〜</span></div>
+      <div class="stat-label">初参戦</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-box">
+      <div class="stat-num">27<span>回</span></div>
+      <div class="stat-label">スターター回数</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-box">
+      <div class="stat-num">36<span>年</span></div>
+      <div class="stat-label">参戦スパン</div>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="11">SUZUKA 8 HOURS ENDURANCE RACE — FULL ENTRY RECORD</th>
+        </tr>
+        <tr>
+          <th>#</th>
+          <th>YEAR</th>
+          <th>No.</th>
+          <th>TEAM</th>
+          <th>CO-RIDER</th>
+          <th>MACHINE<br>TIRE</th>
+          <th>CLS</th>
+          <th>GRID</th>
+          <th>STARTER</th>
+          <th>RESULT</th>
+          <th>LAPS</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td class="col-num">1</td>
+          <td class="col-year">1991</td>
+          <td class="col-no">62</td>
+          <td class="col-team">チーム　ヤマカワ</td>
+          <td class="col-partner">山川　守</td>
+          <td class="col-machine">H: VFR750R</td>
+          <td class="col-cls"><span class="cls-badge cls-ttf">TTF1</span></td>
+          <td class="col-grid">54</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">27位</td>
+          <td class="col-laps">168</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">2</td>
+          <td class="col-year">1993</td>
+          <td class="col-no">75</td>
+          <td class="col-team">チャレンジ オブ ヤマカワ</td>
+          <td class="col-partner">山川　守</td>
+          <td class="col-machine">H: VFR750R</td>
+          <td class="col-cls"><span class="cls-badge cls-ttf">TTF1</span></td>
+          <td class="col-grid">42</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">48位</td>
+          <td class="col-laps">164</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">3</td>
+          <td class="col-year">1994</td>
+          <td class="col-no">58</td>
+          <td class="col-team">チーム ヤマカワ 加藤溶接</td>
+          <td class="col-partner">山川　守</td>
+          <td class="col-machine">K: ZXR750R</td>
+          <td class="col-cls"><span class="cls-badge cls-sb">SB</span></td>
+          <td class="col-grid">47</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">36位</td>
+          <td class="col-laps">163</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">4</td>
+          <td class="col-year">1995</td>
+          <td class="col-no">43</td>
+          <td class="col-team">チーム ヤマカワ 加藤溶接</td>
+          <td class="col-partner">山川　守</td>
+          <td class="col-machine">K: ZXR750R</td>
+          <td class="col-cls"><span class="cls-badge cls-sb">SB</span></td>
+          <td class="col-grid">32</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-insufficient">周回数不足</td>
+          <td class="col-laps">154</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">5</td>
+          <td class="col-year">1996</td>
+          <td class="col-no">58</td>
+          <td class="col-team">加藤溶接・ヤマカワレーシング</td>
+          <td class="col-partner">山川　守</td>
+          <td class="col-machine">K: ZXR750R</td>
+          <td class="col-cls"><span class="cls-badge cls-sb">SB</span></td>
+          <td class="col-grid">43</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-dnf">リタイア</td>
+          <td class="col-laps">29</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">6</td>
+          <td class="col-year">1997</td>
+          <td class="col-no">49</td>
+          <td class="col-team">チャレンジ オブ ヤマカワ</td>
+          <td class="col-partner">山川　守</td>
+          <td class="col-machine">K: ZXR750R</td>
+          <td class="col-cls"><span class="cls-badge cls-sb">SB</span></td>
+          <td class="col-grid">34</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-dnf">リタイア</td>
+          <td class="col-laps">1</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">7</td>
+          <td class="col-year">1998</td>
+          <td class="col-no">54</td>
+          <td class="col-team">チャレンジ オブ ヤマカワ</td>
+          <td class="col-partner">山川　守</td>
+          <td class="col-machine">K: ZXR750R</td>
+          <td class="col-cls"><span class="cls-badge cls-sb">SB</span></td>
+          <td class="col-grid">18</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-dnf">リタイア</td>
+          <td class="col-laps">0</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">8</td>
+          <td class="col-year">1999</td>
+          <td class="col-no">37</td>
+          <td class="col-team">RS-ITOH</td>
+          <td class="col-partner">筒井　秀明</td>
+          <td class="col-machine">K: ZX-9R</td>
+          <td class="col-cls"><span class="cls-badge cls-xf">X-F</span></td>
+          <td class="col-grid">30</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">32位<span style="font-size:11px;color:var(--muted);"> (10位)</span></td>
+          <td class="col-laps">188</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">9</td>
+          <td class="col-year">2000</td>
+          <td class="col-no">27</td>
+          <td class="col-team">RS-ITOH</td>
+          <td class="col-partner">T.SAGA</td>
+          <td class="col-machine">K: ZX-7RR</td>
+          <td class="col-cls"><span class="cls-badge cls-sb">SB</span></td>
+          <td class="col-grid">16</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">29位<span style="font-size:11px;color:var(--muted);"> (19位)</span></td>
+          <td class="col-laps">195</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">10</td>
+          <td class="col-year">2001</td>
+          <td class="col-no">27</td>
+          <td class="col-team">RS-ITOH &amp; KAZE</td>
+          <td class="col-partner">及川　玲<br>法雲　孝昭</td>
+          <td class="col-machine">K: ZX-7RR<br>DL</td>
+          <td class="col-cls"><span class="cls-badge cls-sb">SB</span></td>
+          <td class="col-grid">25</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-dnf">リタイア</td>
+          <td class="col-laps">143</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">11</td>
+          <td class="col-year">2002</td>
+          <td class="col-no">27</td>
+          <td class="col-team">METARAIZAR &amp; RS-ITOH</td>
+          <td class="col-partner">苅田　庄平</td>
+          <td class="col-machine">K: ZX-7RR<br>DL</td>
+          <td class="col-cls"><span class="cls-badge cls-sb">SB</span></td>
+          <td class="col-grid">14</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-dnf">リタイア</td>
+          <td class="col-laps">28</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">12</td>
+          <td class="col-year">2003</td>
+          <td class="col-no">6</td>
+          <td class="col-team">RS-ITOH &amp; KAZE</td>
+          <td class="col-partner">苅田　庄平</td>
+          <td class="col-machine">K: ZX-7RR<br>DL</td>
+          <td class="col-cls"><span class="cls-badge cls-sb">SB</span></td>
+          <td class="col-grid">18</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">17位<span style="font-size:11px;color:var(--muted);"> (6位)</span></td>
+          <td class="col-laps">204</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">13</td>
+          <td class="col-year">2004</td>
+          <td class="col-no">6</td>
+          <td class="col-team">RS-ITOH &amp; KAZE</td>
+          <td class="col-partner">苅田　庄平</td>
+          <td class="col-machine">K: ZX-10R</td>
+          <td class="col-cls"><span class="cls-badge cls-sb">SB</span></td>
+          <td class="col-grid">28</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">43位<span style="font-size:11px;color:var(--muted);"> (27位)</span></td>
+          <td class="col-laps">181</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">14</td>
+          <td class="col-year">2005</td>
+          <td class="col-no">26</td>
+          <td class="col-team">RS-ITOH &amp; KAZE</td>
+          <td class="col-partner">小室　旭</td>
+          <td class="col-machine">K: ZX-10R</td>
+          <td class="col-cls"><span class="cls-badge cls-jsb">JSB</span></td>
+          <td class="col-grid">17</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-dnf">リタイア</td>
+          <td class="col-laps">163</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">15</td>
+          <td class="col-year">2006</td>
+          <td class="col-no">17</td>
+          <td class="col-team">BEET Panasonic LUMIX Racing ZIPATSU</td>
+          <td class="col-partner">清水　和樹</td>
+          <td class="col-machine">K: ZX-10R<br>DL</td>
+          <td class="col-cls"><span class="cls-badge cls-xf">XX-F Div.1</span></td>
+          <td class="col-grid">39</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">21位<span style="font-size:11px;color:var(--muted);"> (6位)</span></td>
+          <td class="col-laps">203</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">16</td>
+          <td class="col-year">2007</td>
+          <td class="col-no">17</td>
+          <td class="col-team">BEET Panasonic LUMIX Racing ZIPATSU</td>
+          <td class="col-partner">西嶋　修</td>
+          <td class="col-machine">K: ZX-10R<br>DL</td>
+          <td class="col-cls"><span class="cls-badge cls-jsb">JSB</span></td>
+          <td class="col-grid">31</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">56位</td>
+          <td class="col-laps">174</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">17</td>
+          <td class="col-year">2008</td>
+          <td class="col-no">26</td>
+          <td class="col-team">RS-ITOH &amp; ASIA</td>
+          <td class="col-partner">清水直樹<br>井上哲悟</td>
+          <td class="col-machine">K: ZX-10R<br>DL</td>
+          <td class="col-cls"><span class="cls-badge cls-ewc">EWC</span></td>
+          <td class="col-grid">36</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-dnf">リタイア</td>
+          <td class="col-laps">114</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">18</td>
+          <td class="col-year">2009</td>
+          <td class="col-no">26</td>
+          <td class="col-team">RS-ITOH &amp; ASIA</td>
+          <td class="col-partner">清水　直樹</td>
+          <td class="col-machine">K: ZX-10R</td>
+          <td class="col-cls"><span class="cls-badge cls-other">—</span></td>
+          <td class="col-grid">20</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">33位</td>
+          <td class="col-laps">166</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">19</td>
+          <td class="col-year">2010</td>
+          <td class="col-no">26</td>
+          <td class="col-team">RS-ITOH &amp; ASIA</td>
+          <td class="col-partner">医王田章弘<br>岩﨑哲朗</td>
+          <td class="col-machine">K: ZX-10R</td>
+          <td class="col-cls"><span class="cls-badge cls-other">—</span></td>
+          <td class="col-grid">17</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">13位</td>
+          <td class="col-laps">204</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">20</td>
+          <td class="col-year">2011</td>
+          <td class="col-no">8</td>
+          <td class="col-team">BOLLIGER TEAM SWITZERLAND</td>
+          <td class="col-partner">H.SAIGER<br>R.STAMM</td>
+          <td class="col-machine">K: ZX-10R<br>Pi</td>
+          <td class="col-cls"><span class="cls-badge cls-ewc">EWC</span></td>
+          <td class="col-grid">16</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">38位</td>
+          <td class="col-laps">193</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">21</td>
+          <td class="col-year">2012</td>
+          <td class="col-no">3</td>
+          <td class="col-team">RS-ITOH &amp; ASIA</td>
+          <td class="col-partner">岩﨑哲朗<br>渡辺一樹</td>
+          <td class="col-machine">K: ZX-10R<br>Pi</td>
+          <td class="col-cls"><span class="cls-badge cls-ewc">EWC</span></td>
+          <td class="col-grid">16</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">13位</td>
+          <td class="col-laps">206</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">22</td>
+          <td class="col-year">2013</td>
+          <td class="col-no">3</td>
+          <td class="col-team">RS-ITOH &amp; ASIA</td>
+          <td class="col-partner">岩﨑哲朗<br>村上雅彦</td>
+          <td class="col-machine">K: ZX-10R<br>Pi</td>
+          <td class="col-cls"><span class="cls-badge cls-ewc">EWC</span></td>
+          <td class="col-grid">22</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">13位</td>
+          <td class="col-laps">206</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">23</td>
+          <td class="col-year">2014</td>
+          <td class="col-no">051</td>
+          <td class="col-team">TEAM TENMEI SAKURA PROJECT</td>
+          <td class="col-partner">井上哲悟<br>高橋英倫</td>
+          <td class="col-machine">K: ZX-10R<br>DL</td>
+          <td class="col-cls"><span class="cls-badge cls-ewc">EWC</span></td>
+          <td class="col-grid">17</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-dnf">リタイア</td>
+          <td class="col-laps">82</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">24</td>
+          <td class="col-year">2015</td>
+          <td class="col-no">051</td>
+          <td class="col-team">TEAM TENMEI SAKURA PROJECT</td>
+          <td class="col-partner">井上哲悟<br>高橋英倫</td>
+          <td class="col-machine">K: ZX-10R<br>DL</td>
+          <td class="col-cls"><span class="cls-badge cls-ewc">EWC</span></td>
+          <td class="col-grid">22</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-dnf">リタイア</td>
+          <td class="col-laps">121</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">25</td>
+          <td class="col-year">2016</td>
+          <td class="col-no">3</td>
+          <td class="col-team">RS-ITOH &amp; FA.COM 保険職人</td>
+          <td class="col-partner">岡村光矩<br>石塚健</td>
+          <td class="col-machine">K: ZX-10R<br>DL</td>
+          <td class="col-cls"><span class="cls-badge cls-sst">SST</span></td>
+          <td class="col-grid">28</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-pos">21位<span style="font-size:11px;color:var(--gold);"> (1位)</span></td>
+          <td class="col-laps">207</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">26</td>
+          <td class="col-year">2018</td>
+          <td class="col-no">4</td>
+          <td class="col-team">TEAM SUGAI RACING JAPAN</td>
+          <td class="col-partner">須貝　義行</td>
+          <td class="col-machine">Ap: RSV4 RF<br>BS</td>
+          <td class="col-cls"><span class="cls-badge cls-ewc">EWC</span></td>
+          <td class="col-grid">47</td>
+          <td class="col-rider">須貝</td>
+          <td class="col-result result-dnf">DNF</td>
+          <td class="col-laps">161</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">27</td>
+          <td class="col-year">2019</td>
+          <td class="col-no">98</td>
+          <td class="col-team">TEAM HANSHIN RIDING SCHOOL</td>
+          <td class="col-partner">佐野勝人<br>松本隆征</td>
+          <td class="col-machine">K: ZX-10RR<br>BS</td>
+          <td class="col-cls"><span class="cls-badge cls-sst">SST</span></td>
+          <td class="col-grid">39</td>
+          <td class="col-rider">佐野</td>
+          <td class="col-result result-pos">45位<span style="font-size:11px;color:var(--muted);"> (10位)</span></td>
+          <td class="col-laps">188</td>
+        </tr>
+
+        <tr class="row-hiatus">
+          <td colspan="11" class="full-span">— 2020・2021年　鈴鹿８耐　中止（COVID-19）—</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">28</td>
+          <td class="col-year">2022</td>
+          <td class="col-no">42</td>
+          <td class="col-team">Shinshu activation project Team NAGANO</td>
+          <td class="col-partner">桜山茂昇<br>岡村光矩</td>
+          <td class="col-machine">B: S1000RR<br>BS</td>
+          <td class="col-cls"><span class="cls-badge cls-ewc">EWC</span></td>
+          <td class="col-grid">29</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-insufficient">周回数不足</td>
+          <td class="col-laps">160</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">29</td>
+          <td class="col-year">2023</td>
+          <td class="col-no">42</td>
+          <td class="col-team">Shinshu activation project Team NAGANO</td>
+          <td class="col-partner">桜山茂昇<br>岡村光矩</td>
+          <td class="col-machine">B: S1000RR<br>BS</td>
+          <td class="col-cls"><span class="cls-badge cls-ewc">EWC</span></td>
+          <td class="col-grid">42</td>
+          <td class="col-rider"><span class="start-icon"></span></td>
+          <td class="col-result result-insufficient">周回数不足</td>
+          <td class="col-laps">143</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">30</td>
+          <td class="col-year">2024</td>
+          <td class="col-no">42</td>
+          <td class="col-team">SHINSYUREN with TOTEC</td>
+          <td class="col-partner">中村修一郎<br>中村竜也</td>
+          <td class="col-machine">B: M1000RR<br>BS</td>
+          <td class="col-cls"><span class="cls-badge cls-ewc">EWC</span></td>
+          <td class="col-grid">25</td>
+          <td class="col-rider">中村(修)</td>
+          <td class="col-result result-pos">24位<span style="font-size:11px;color:var(--muted);"> (20位)</span></td>
+          <td class="col-laps">209</td>
+        </tr>
+
+        <tr>
+          <td class="col-num">31</td>
+          <td class="col-year">2025</td>
+          <td class="col-no">45</td>
+          <td class="col-team">SHINSYUREN with TOTEC</td>
+          <td class="col-partner">中村修一郎<br>中島陽向</td>
+          <td class="col-machine">B: M1000RR<br>BS</td>
+          <td class="col-cls"><span class="cls-badge cls-ewc">EWC</span></td>
+          <td class="col-grid">27</td>
+          <td class="col-rider">中島</td>
+          <td class="col-result result-dnf">DNF</td>
+          <td class="col-laps">207</td>
+        </tr>
+
+        <tr class="row-future">
+          <td class="col-num" style="color:var(--blue-accent);">32</td>
+          <td class="col-year">2026</td>
+          <td class="col-no" style="color:var(--blue-accent);">—</td>
+          <td class="col-team" style="color:var(--blue-accent);">SHINSYUREN with TOTEC</td>
+          <td class="col-partner" style="color:var(--blue-accent);">中島陽向<br>奥田教介</td>
+          <td class="col-machine" style="color:var(--blue-accent);">B: M1000RR<br>BS</td>
+          <td class="col-cls"><span class="cls-badge cls-ewc">EWC</span></td>
+          <td class="col-grid" style="color:var(--blue-accent);">—</td>
+          <td class="col-rider" style="color:var(--blue-accent);">—</td>
+          <td class="col-result result-future">エントリー済</td>
+          <td class="col-laps" style="color:var(--blue-accent);">—</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Legend -->
+  <div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
+    <div>
+      <div style="font-size: 10px; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; margin-bottom: 10px;">クラス</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <span class="cls-badge cls-ewc">EWC</span>
+        <span class="cls-badge cls-sb">SB<br>Superbike</span>
+        <span class="cls-badge cls-jsb">JSB</span>
+        <span class="cls-badge cls-sst">SST</span>
+        <span class="cls-badge cls-ttf">TTF1</span>
+        <span class="cls-badge cls-xf">X-F<br>XX-F</span>
+      </div>
+    </div>
+    <div>
+      <div style="font-size: 10px; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; margin-bottom: 10px;">マシン略称</div>
+      <div style="font-size: 11px; color: var(--muted); line-height: 1.8;">
+        H = Honda　/ K = Kawasaki　/ B = BMW　/ Ap = Aprilia<br>
+        タイヤ: DL = Dunlop　/ BS = Bridgestone　/ Pi = Pirelli
+      </div>
+    </div>
+    <div>
+      <div style="font-size: 10px; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; margin-bottom: 10px;">結果の見方</div>
+      <div style="font-size: 11px; color: var(--muted); line-height: 1.8;">
+        括弧内 = クラス順位　/ <span class="start-icon" style="display:inline-block;"></span> = 本人がスターター
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  東村伊佐三　鈴鹿８耐参戦歴　1991–2026
+</footer>
+
+</body>
+</html>
